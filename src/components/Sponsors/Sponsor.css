@@ -1,0 +1,146 @@
+.container_spons{
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: url("../../Images/igor-bumba-rkaahInFlBg-unsplash.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.container{
+    margin-top: 20px;
+    margin: 40px;
+    
+}
+
+
+
+.spons_col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 220px;
+  }
+
+.sponsimg{
+    width: 220px;
+    height: 220px;
+   object-fit: contain;
+}
+.spons_title{
+  color: aliceblue;
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.spons_wrapper{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3rem;
+ }
+
+
+.spons_wrapper{
+
+}
+
+@media (max-width:900px) {
+    .container_spons{
+        min-height: 100vh;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .spons_wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        width: 90%;
+        flex-direction: column;
+    }
+    
+    .spons_col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 220px;
+        width: 220px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    .sponsimg{
+        height: 220px;
+        width: 300px;
+        object-fit: contain;
+        border-radius: 5px;
+    }
+    .spons_title{
+      color: aliceblue;
+      font-size:33px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    
+   
+}
+
+
+
+@media (max-width:400px) {
+    .container_spons{
+      
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .spons_wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        width: 90%;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    .spons_col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:220px;
+        width: 250px;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .sponsimg{
+        height:100%;
+        width: 100%;
+        object-fit: contain;
+        border-radius: 5px;
+    }
+    .spons_title{
+      color: aliceblue;
+      font-size:33px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    
+   
+}

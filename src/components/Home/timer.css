@@ -1,0 +1,33 @@
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    width: 100%;
+  }
+  
+  .time-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0px;
+  }
+  
+  .time-value {
+    font-size: 29px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#fff0, #f2f2f2ad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 2rem;
+    padding-bottom: 0rem;
+  }
+  
+  .time-label {
+    font-size: 19px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+  }
+  

@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@200;400&family=Lato:wght@300;400&family=Montserrat:ital,wght@0,500;0,600;0,700;1,300;1,900&family=Nunito+Sans:ital,wght@0,200;1,200;1,300&family=Roboto&family=Space+Mono:ital@1&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.image{
+    object-fit: contain;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.paper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+
+}
+p{
+    margin-top: 4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.forms{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form_paper{
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 20px;
+    width: 280px;
+}
+.submit{
+    margin-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.formsection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.form_paper_section{
+   margin-top: 30px;
+    margin-bottom: 30px; 
+    display: flex; 
+    padding: 20px;
+    width: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formwidth{
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px; */
+    width: 350px;
+}
+.Mainevent_card{
+    width:220px;
+    height: 180px;
+}
+.merchandise{
+    position:absolute;
+    top: 100%;
+    left:2%;
+    bottom: 0%;
+    width: 200px;
+    justify-content: space-between;
+}
+
+@media (max-width:900px) {
+    .form_paper_section{
+        margin: 20px;
+         margin-bottom: 10px; 
+         display: flex; 
+         padding: 20px;
+        
+     }
+     
+     .formwidth{
+         display: flex;
+         flex-direction: column;
+         width: 100px;
+     }
+    
+    
 }

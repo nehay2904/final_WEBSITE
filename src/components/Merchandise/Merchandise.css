@@ -1,0 +1,77 @@
+.main_merchan{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background:linear-gradient(rgba(4,9,49,0.6),rgba(4,9,49,0.6)),url('../../Images/avenger.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    /* padding: 40px; */
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.merchanImg{
+    width: 450px;
+    height: 400px;
+    /* margin-left: 40px; */
+}
+.register_class{
+    /* text-align: center; */
+    margin-left: 30px;
+    color: aliceblue;
+    font-size: 15px;
+    
+}
+.merchantext{
+    font-size: 17px;
+    text-align:right;
+    color: aliceblue;
+}
+.form_paper_merchan{
+    padding: 20px;
+    margin-left: 100px;
+}
+.formwidthmerchan{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width:900px) {
+    .main_merchan{
+        display: flex;
+        align-items: center;
+        min-height:   100vh;
+        justify-content: center;
+        padding: 0px;
+        min-width: 100%;
+        flex-direction: column;
+        padding-top: 100px;
+        position: absolute;
+    }
+    
+    .merchanImg{
+        width: 300px;
+        height: 300px;
+        /* margin-left: 40px; */
+    }
+    .register_class{
+        /* text-align: center; */
+        color: aliceblue;
+        font-size: 15px;
+        /* justify-content: ; */
+        /* align-items: center; */
+       
+        margin-top: 30px;
+        width:440px;
+    }
+    .merchantext{
+        font-size: 15px;
+        text-align:center;
+        padding: 20px;
+    }
+    
+}

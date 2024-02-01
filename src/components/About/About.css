@@ -1,0 +1,73 @@
+.about{
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column; 
+     color: aliceblue;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     padding: 30px;
+     background: linear-gradient(rgba(53, 8, 0, 0.6),rgba(67, 0, 0, 0.6)),url('../../Images/halloween.jpg')  ;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+
+.about_title{
+    margin-top:30px;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+
+.content_box{
+    width: 90%;
+    height: 400px;
+    padding-left: 25px;
+    padding-right: 25px;
+   
+}
+.about_content{
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 55%;
+    height: 300px;
+    font-size: 17px;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+
+@media (max-width:900px) {
+    .about{
+        height: 120vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column; 
+         color: aliceblue;
+         /* padding-top: 300px; */
+    }
+    
+    .about_title{
+        margin-top:30px;
+        margin-bottom: 30px;
+    }
+    
+    .content_box{
+        width:90%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* background-color: blue; */
+    }
+    .about_content{
+        text-align: center;
+        width:110%;
+        font-size: 16px;
+        padding: 20px;
+        letter-spacing: 1px;
+
+    }
+    
+}
