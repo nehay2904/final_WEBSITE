@@ -24,12 +24,12 @@ const CountdownTimer = ({ deadline }) => {
   return (
     <div className="countdown-timer">
       <div className="time-section">
-        <div className="time-value">{days}</div>
-        <div className="time-label">Days</div>
+        <div style={{color:"white"}} className="time-value" >{days}</div>
+        <div  className="time-label" >Days</div>
       </div>
       <div className="time-section">
         <div className="time-value">{hours}</div>
-        <div className="time-label">Hours</div>
+        <div style={{color:"white"}} className="time-label">Hours</div>
       </div>
       <div className="time-section">
         <div className="time-value">{minutes}</div>

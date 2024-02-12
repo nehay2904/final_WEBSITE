@@ -1,70 +1,93 @@
-.theme{
-    height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+.themeCon{
+    
+    font-family: "Marvel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    flex-direction: column; 
-     color: aliceblue;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     padding: 0px 30px;
-     background: linear-gradient(rgba(53, 0, 0, 0.6),rgba(67, 0, 0, 0.6)),url('../../Images/rise-humanoids-with-advanced-headgear-generative-ai.jpg')  ;
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: cover;
-}
-
-.theme_title{
-    margin: 30px 0px;
-   
-}
-.content_box{
-    width: 67%;
+    height: 100vh;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../Images/Mjolnir\ thor\ marvel\ wallpaper.jpeg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: aliceblue;
 }
 .theme_con{
     display: flex;
     flex-direction: column;
-    width: 55%;
+    align-items: flex-start;
+    padding: 30px;
+    margin: 30px;
+    width: 60%;
+    position: relative;
+}
+.theme_title{
+    font-size: 45px;
+}
 
-}
 .theme_content{
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    height: 300px;
-    font-size: 17px;
-    line-height: 1.5rem;
-    letter-spacing: 1px;
+    font-size: 20px;
 }
+.captain{
+    position: absolute;
+    left: -60%;
+    top: -10%;
+}
+
+.iron{
+  position: absolute;
+  top: 0%;
+  left: -50%;
+}
+
 @media (max-width:900px) {
-    .theme{
-        justify-content: flex-start;
-        min-height: 100vh;
+    .themeCon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        padding-top: 30px;
-    }
-    
-    .theme_title{
-        margin: 30px 0px;
-       
-    }
-    .content_box{
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         width: 100%;
     }
     .theme_con{
         display: flex;
         flex-direction: column;
-        width: 95%;
-    
+        align-items:center;
+        padding: 30px;
+        margin: 30px;
+        width: 100%;
+        background: rgba(132, 1, 81, 0.5);
+    }
+    .theme_title{
+        color: aliceblue;
+    }
+    .content_box{
+        width: 100%;
+        margin-top: 20px;
     }
     .theme_content{
-        justify-content: center;
-        align-items: center;
-        text-align: left;
-        height: 300px;
-        font-size: 17px;
-        line-height: 1.5rem;
-        letter-spacing: 1px;
+        color: aliceblue;
+        padding: 0px;
+        text-align: center;
+       font-size: 15px;
+       width: 100%;
     }
+    
+
+.iron{
+    position: absolute;
+    top: 0%;
+    left: -30%;
+    z-index: -1;
+  }
+  
 }

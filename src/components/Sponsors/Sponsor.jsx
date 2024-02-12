@@ -1,49 +1,18 @@
 import React,{useEffect,useState} from 'react'
 import './Sponsor.css'
-import axios from 'axios'
 import Fade from 'react-reveal/Fade'
 import SponsCard from '../../materialUI/Spons.card'
-
+import SponsData from '../../Data/Spons'
+import iron from '../../Images/thor.png'
 const Sponsor = () => {
-  
-  const [spons_url, setspons_url] = useState('')
-
-  const [sponsData, setsponsData] = useState([{
-        spons_url
-  }])
-
-  const create_posts = (event) => {
-
-    event.preventDefault()
-
-
-    axios.post('https://eclectika2k24-server.onrender.com/spons_data', {  
-    
-       spons_url
-    }).then((response) => {
-
-      setsponsData([...sponsData, {
-        
-        spons_url
-      }])
-    }
-    )
-  
-  }
-
-  useEffect(() => {
-    axios.get('https://eclectika2k24-server.onrender.com/get_spons').then((response) => {
-      setsponsData(response.data)
-    })
-
-  }, [3000])
   return (
     <div id='sponsor' className='container_spons'>
+              {/* <Fade  right><div className='thor'><img src={iron} width={250} height={250} srcset="" /></div></Fade> */}
         <Fade bottom><h1 className="spons_title">Our Sponsors</h1></Fade>
         <div className='Team'>
-        <div className="spons_wrapper">
-            {sponsData.map((spons,index) => (
-               <Fade bottom><div className="spons_col"> <SponsCard img={spons.spons_url} /></div></Fade>
+        <div className="team_wrapper">
+            {SponsData.map((spons,index) => (
+               <Fade bottom><div className="spons_col"> <SponsCard img={spons.url} /></div></Fade>
             ))}
         </div>
     </div>

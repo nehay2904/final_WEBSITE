@@ -4,8 +4,9 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  background: rgb(0, 0, 0);
   padding-left: 20px;
+  min-height: 200vh;
+  /* background:  rgb(18, 108, 211); */
 }
 .close_icon_team{
   position: absolute;
@@ -21,15 +22,13 @@
     margin-top: 10px;
     margin-left: 4rem;
     margin-right: 4rem;
+    min-height: 100vh;
 }
 .team_wrapper{
    display: grid;
    place-items: center;
    grid-template-columns: repeat(5,1fr);
    gap: 2rem;
-}
-.sponsor{
-  display: flex;
 }
 .mini_event_wrapper{
   display: grid;
@@ -71,10 +70,9 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* height: 100vh; */
+    min-height: 100vh;
     padding-top: 30px;
     padding-bottom: 30px;
-    background: rgb(0, 0, 0);
     padding-left: 20px;
     justify-content: flex-start;
   }

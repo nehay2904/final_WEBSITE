@@ -6,6 +6,7 @@ import { Paper } from '@mui/material';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 
+import emailjs from '@emailjs/browser';
 import { Link } from 'react-router-dom';
 
 export default function MerchandForm() {
@@ -14,7 +15,23 @@ export default function MerchandForm() {
 
 
   const form = useRef();
-  
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_7wfwqo5', 'template_swu0mhz', form.current, 'TqO-LjB1jDL7sr4EH')
+      .then((result) => {
+          console.log(result.text);
+          console.log("message sent")
+      }, (error) => {
+          console.log(error.text);
+          console.log("message not sent")
+      });
+
+
+    
+  };
+
+
 
   return (
   <>
@@ -40,7 +57,7 @@ export default function MerchandForm() {
 
    <Link to={'/'}>
    <Stack direction="row" className='submit' spacing={3}>
-         <Button variant="contained">Submit</Button>
+         <Button onClick={sendEmail} variant="contained">Submit</Button>
       </Stack>
    </Link>
       </div>

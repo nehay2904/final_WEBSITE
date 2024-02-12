@@ -10,7 +10,7 @@ const Mini_Event = ({desc, e_desc}) => {
     <Card className="Mainevent_card">
       <CardActionArea>
         <CardContent>
-          <Typography  gutterBottom variant="h8" component="div">
+          <Typography  gutterBottom variant="h6" component="div">
             {e_desc}
           </Typography>
           <Typography variant="body2" color="text.secondary" >

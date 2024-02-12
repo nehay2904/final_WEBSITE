@@ -1,8 +1,4 @@
 import './App.css';
-import Contact from './components/Contact/Contact';
-import Home from './components/Home/Home';
-import Ecectika_Gallery from './components/Main_Gallery/Gallery';
-import Sponsor from './components/Sponsors/Sponsor';
 import Overall_Team from './components/Team/Overall_Team';
 import MultiActionAreaCard from './materialUI/CardComponent';
 import {
@@ -16,19 +12,19 @@ import MainEvents from './components/Events/MainEvents';
 import Merchandise from './components/Merchandise/Merchandise';
 
 
-
 function App() {
   return (
     <div>
     
     <Router>
            <div className="App">
-           <Routes>
-                 <Route exact path='/' element={< OverAll_Design />}></Route>
+            <Routes>
+                 <Route exact path='/' element={<OverAll_Design />}></Route>
                  <Route  path='team' element={< Overall_Team/>}></Route>
                  <Route  path='events' element={< MainEvents/>}></Route>
                  <Route  path='merchandise' element={< Merchandise/>}></Route>
           </Routes>
+         
           </div>
        </Router>
    </div>

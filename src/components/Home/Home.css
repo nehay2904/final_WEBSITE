@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 
 
 /* // linear-gradient(rgba(40, 52, 52,0.4), rgba(42, 41, 54,0.4)), */
@@ -13,6 +17,7 @@
     display: flex;
     position: absolute;
     top: 50%;
+    padding: 10px 14px;
 }
 .logo{
     justify-content: center;
@@ -23,59 +28,38 @@
     width: 400px;
     height: 250px;
 }
-.Home_title{
-    font-weight: 700;
-    font-size: 90px;
-    letter-spacing: 7px;
-    text-transform: uppercase;
-	  background: linear-gradient(rgb(177, 188, 187), rgba(8, 0, 0, 0.8));
-	  -webkit-background-clip: text;
-	  -webkit-text-fill-color: transparent;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 .subtitle{
     font-size: 20px;
     color:#99a0a7;
 }
-*{
-    margin: 0;
-    padding: 0;
-  }
-  
+.fixed_video{
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+}
+.video_bg{
+  width: 100%;
+
+}
   .layout{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    position: relative;
+    /* background: linear-gradient(rgb(4,9,49,0.4),rgb(4,9,49,0.4)) */
   }
-  .loading{
-    background: linear-gradient(to top ,#470000, #511d1d);
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .loading2{
-    background:linear-gradient(rgba(35, 0, 0, 0.457),rgba(46, 0, 0, 0.3)), url('../../Images/getting-into-comics-a-general-guide.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position:absolute;
-  }
+ 
+
+
   .bg{
     height: 98vh;
-    position: absolute;
-    background: linear-gradient(rgba(59, 0, 0, 0.3),rgba(84, 1, 1, 0.562)), transparent;
+    /* position: absolute; */
+    background: linear-gradient(rgba(16, 1, 84, 0),rgba(103, 1, 48, 0.5)), transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,9 +68,34 @@
     text-align: center;
   }
   
+  .Home_title{
+    font-weight: 800;
+    font-size: 75px;
+	  background:beige;
+	  -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    letter-spacing: 1.3px;
+}
+.icons{
+  width: 5%;
+  height:30vh;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+.s_icon{
+   font-size: 200px;
+}
   .logo{
     width: 22%;
-      height: 28%;
+    height: 28%;
     border-radius: 50%;
     animation: fadeOut 1s 1s  forwards, moveBackward 1s 1s  backwards,size 1s 1s backwards;
     position: absolute;
@@ -95,7 +104,7 @@
   }
   
   .logo2{
-    width: 22%;
+    width: 20%;
     height: 28%;
     border-radius: 50%;
     position: absolute;
@@ -132,10 +141,31 @@
   }
   
   .title{
-    margin-top: 30%;
-    color: rgb(170, 170, 170);
-    font-size: 30px;
+    color: whitesmoke;
+    text-align: center;
+    font-family: "Marvel", sans-serif;
+    font-weight:800;
+    font-style: italic;
+    margin-bottom: 40px;
   }
+  .date{
+    height: 10px;
+  }
+ 
+  .tryn{
+    height: 0vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .parallax{
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    z-index: -1;
+  }
+
 @media (max-width:900px) {
     .home{
         height: 100vh;
@@ -147,8 +177,17 @@
     }
     .wrapper{
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .bg{
+     
+      height: 70vh;
+      position: absolute;
+      /* background: linear-gradient(rgba(78, 0, 195, 0.4),rgba(75, 0, 145, 0.4)), transparent; */
+      display: flex;
+      justify-content: center;
+      width: 90%;
     }
     .logo{
         justify-content: center;
@@ -161,35 +200,52 @@
     }
     .Home_title{
         font-weight: 800;
-        font-size: 50px;
+        font-size: 30px;
         letter-spacing: 6px;
         text-transform: uppercase;
-       
+        width: 96%;
     }
     
 .subtitle{
-    font-size: 10px;
+    font-size: 7px;
+    width: 70%;
     
 }
  .title{
-    margin-top: 60%;
     color: rgb(170, 170, 170);
     font-size: 20px;
+    padding-bottom: 30px;
   }
    .logo2{
-    width: 30%;
-    height: 22%;
+    width: 40%;
+    height: 19%;
     border-radius: 50%;
     position: absolute;
     top: 20%;
     opacity: 0.6;
   }
-  .bg{
-    width: 90%;
+  .icons{
+    width: 5%;
+    height:10vh;
+    position: fixed;
+    bottom: -5%;
+    right: 8%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
   }
-   
-  .logo2{
-    width:40%;
-    height: 22%;
+  .s_icon{
+     font-size: 200px;
   }
+  .video_bg{
+    width: 400%;
+  
+  }
+ 
+ .tryn{
+   height: 10vh;
+   display: flex;
+   flex-direction: column;
+ }
+ 
 }

@@ -1,172 +1,137 @@
-import ashwin from './teamimages/ashwin.jpg';
-import gowtham from './teamimages/gowtham.jpg';
-import havilah from './teamimages/havilah.png';
-import krishna from './teamimages/krishna.jpg';
-import Laasya from './teamimages/laasya.jpeg';
-import majji from './teamimages/majji.jpg';
-import pawan from './teamimages/pawan.jpg';
-import rashi from './teamimages/rashi.jpg';
-import saket from './teamimages/saket.jpg';
-import satwik from './teamimages/satwik.jpeg';
-import shruti from './teamimages/shruti.png';
-import suraj from './teamimages/suraj.jpg';
-import umakant from './teamimages/umakant.jpg';
-import vamshi from './teamimages/vamshi.jpg';
-import yash from './teamimages/yash.jpeg';
-import vivek from './teamimages/vivek.jpeg';
-import govind from './teamimages/govind.png';
 
 
+import vikram from '../Data/images/vikram.jpg'
+import Bhargav from '../Data/images/bhargav.jpg'
+import samshi from '../Data/images/samshi.jpg'
+import Susheel from '../Data/images/susheel.jpg'
+import surbhi from '../Data/images/surabhi.jpg'
+import sudha from '../Data/images/shubha.jpg'
+import Pallavi from '../Data/images/palavi.jpg'
+import sunil from '../Data/images/sunil.jpg'
+import Neha from '../Data/images/neha.jpg'
+import Nitin from '../Data/images/nitin.jpg'
+import Suraj from '../Data/images/suraj.jpg'
+import Mayank from '../Data/images/mayank.jpg'
+import harhsa from '../Data/images/harhsa.jpg'
+import vishal from '../Data/images/vishal.jpg'
+import kishore from '../Data/images/kishor.jpg'
+import akhil from '../Data/images/akhil.jpg'
 
-
-
-const team = [
+const TeamData = [
     {
-        img: vamshi,
-        name: "R.Vamshi",
+        img: vikram,
+        name: "S. Sri Vikram",
+        branch: "Mechanical",
+        domain: "Event Management",
+        email: "srivikramsunkavalli@gmail.com",
+       },
+       {
+        img: Bhargav,
+        name: "Hari Bhargav",
         branch: "CSE",
         domain: "Event Management",
-        mobile: 8668873065,
+        mobile: 0,
+        email: "haripopuri100@gmail.com",
+       }, {
+        img: Nitin,
+        name: "Nithin Siddala",
+        branch: "Biotechnology",
+        domain: "Event Management",
+        mobile: 0,
+        email: "nithinsiddala99@gmail.com",
+       }, {
+        img:Suraj,
+        name: "Suraj Kumar",
+        branch: "MCA",
+        domain: "Event Management",
+        mobile: 0,
+        email: "yadavsurajkumar665@gmail.com",
+       }, {
+        img:samshi,
+        name: "Samshitha Reddy",
+        branch: "Electrical",
+        domain: "Event Management",
+        mobile: 0,
+        email: "samshithareddykarra@gmail.com",
+       },{
+        img:harhsa,
+        name: "Harsh",
+        branch: "Mechanical",
+        domain: "Event Management",
+        mobile: 0,
         email: "",
-       },
-       {
-        img: satwik,
-        name: "Sathwik reddy ",
-        branch: "CIVIL",
-        domain: "Event Management",
-        mobile: 7093675886,
-        email: "sathwikreddy0007@gmail.com"
-       },
-       {
-        img: gowtham,
-        name: "Gowtham kilaru",
-        branch: "CSE",
-        domain: "Public Relations",
-        mobile: 6372048153,
-        email: "gowthamkilaru23@gmail.com"
-       },
-      
-       {
-        img: pawan,
-        name: "Pawan ",
-        branch: "METALLURGY",
+       }, {
+        img: Susheel,
+        name: "Susheel Kumar",
+        branch: "Mechanical",
+        domain: "Public relations",
+        mobile: 0,
+        email: "Susheelbanavath9908@gmail.com ",
+       }, {
+        img: surbhi,
+        name: "Surabhi Singh ",
+        branch: "Metallurgy",
+        domain: "Public relations",
+        mobile: 0,
+        email: "singhji9685@gmail.com ",
+       }, {
+        img:vishal,
+        name: "Vishal Singh ",
+        branch: "Civil",
+        domain: "Public relations",
+        mobile: 0,
+        email: "vishalsingh22062002@gmail.com",
+       }, {
+        img:sudha,
+        name: "Shubhanshu",
+        branch: "Chemical",
         domain: "Sponsorship",
-        mobile: 9902073785,
-        email: "vpawansudhir@gmail.com"
-       },
-       {
-        img: krishna,
-        name: "Krishna Agrawal",
-        branch: "BIOMEDICAL",
-        domain: "Event Management",
-        mobile: 9893143930,
-        email: "krishnaagrawal1055@gmail.com"
-       },
-       {
-        img: yash,
-        name: "Yash Samarth",
-        branch: "CIVIL",
+        mobile: 0,
+        email: "",
+       }, {
+        img: Mayank,
+        name: "Mayank",
+        branch: "Biotechnology",
         domain: "Sponsorship",
-        mobile: 8085204422,
-        email: "yashsamarth2001@gmail.com"
-       },
-       {
-        img: shruti,
-        name: "Shruti",
-        branch: "CHEMICAL",
+        mobile: 0,
+        email: "",
+       }, {
+        img: akhil,
+        name: "Akhil",
+        branch: "chemical",
         domain: "Documentation",
-        mobile: 8349428617,
-        email: "rathshruti1415@gmail.com"
-       },
-       {
-        img: govind,
-        name: "Govind",
-        branch: "CHEMICAL",
+        mobile: 0,
+        email: "akhilsingamsetty225@gmail.com",
+       }, {
+        img: sunil,
+        name: "P. Sunil Kumar",
+        branch: "Mechanical",
+        domain: "Design & editing",
+        mobile: 0,
+        email: "sunilkumarporandla360@gmail.com",
+       }, {
+        img: kishore,
+        name: "Jeevan Kishore",
+        branch: "Mechanical",
         domain: "Creatives",
-        mobile: 7386386675,
-        email: "govindkumar38980@gmail.com"
-       },
-       {
-        img: havilah,
-        name: "Havilah",
-        branch: "CHEMICAL",
+        mobile: 0,
+        email: "njkishore.360@gmail.com",
+       }, {
+        img:Pallavi,
+        name: "Pallavi Sudhaker",
+        branch: "Architecture",
         domain: "Creatives",
-        mobile: 8688989980,
-        email: "havilahbunga178100@gmail.com"
-        },
-    
-       {
-        img: Laasya,
-        name: "K S Laasya",
-        branch: "ELECTRICAL",
-        domain: "Public Relations",
-        mobile: 8790799404,
-        email: "laasya2003@gmail.com"
-       },
-     
-      
-        {
-         img: rashi,
-         name: "Rashi Sahu",
-         branch: "CHEMICAL",
-         domain: "Sponsorship",
-         mobile: 9479283088,
-         email: "rashisahu3088@gmail.com"
-        },
-       {
-        img: majji,
-        name: "Majji Yaswanth Sai",
-        branch: "METALLURGY",
-        domain: "Event Management",
-        mobile: 9691988661,
-        email: "majjiyaswanthsai17@gmail.com"
-       },
-       {
-        img: umakant,
-        name: "Umakant",
-        branch: "ELECTRICAL",
-        domain: "Public Relations",
-        mobile: 7089997141,
-        email: "293umakantsahu@gmail.com"
-       },
-       {
-        img: ashwin,
-        name: "Ashwin Sudhir Umale",
-        branch: "MECHANICAL",
-        domain: "Creatives",
-        mobile: 8982690492,
-        email: "ashwinumale2@gmail.com"
-       },
-     
-       {
-        img: saket,
-        name: "B.Saketh",
-        branch: "CIVIL",
-        domain: "Event Management",
-        mobile: 9550123649,
-        email: "bandarusaketh123@gmail.com"
+        mobile: 0,
+        email: "sudhakerpallavi@gmail.com",
+       }, {
+        img: Neha,
+        name: "Neha yednurwar",
+        branch: "Mining",
+        domain: "Tech",
+        mobile: 0,
+        email: "yednurwarneha@gmail.com",
        },
        
-    
-       {
-        img: suraj,
-        name: "Suraj",
-        branch: "BIOTECH",
-        domain: "Public Relations",
-        mobile: 9399761604,
-        email: "923surajsahu@gmail.com"
-       },
-      
-        
-        
-       {
-        img: vivek,
-        name: "vivek",
-        branch: "IT ",
-        domain: "Tech",
-        mobile: "",
-        email: ""
-       }
 ]
 
-export default team
+export default TeamData

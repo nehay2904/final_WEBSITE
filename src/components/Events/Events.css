@@ -1,30 +1,66 @@
 .events{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    height: 280vh;
-    background: linear-gradient(rgba(53, 0, 0, 0.6),rgba(67, 0, 0, 0.6)),url('../../Images/cosmic-background-with-colorful-laser-lights-perfect-digital-wallpaper.jpg'), linear-gradient(rgba(31, 54, 115, 0.8), rgba(25, 57, 99, 0.8));
+    min-height: 230vh;
+    /* background: linear-gradient(rgba(80, 31, 1, 0.395), rgba(143, 50, 0, 0.363)), url('../../Images/Thanos\ wallpaper\ marvel\ AI.jpeg'); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    position: relative;
 }
 .mainevents{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 480vh;
-    background: linear-gradient(rgba(53, 0, 0, 0.6),rgba(67, 0, 0, 0.6)),url('../../Images/cosmic-background-with-colorful-laser-lights-perfect-digital-wallpaper.jpg'), linear-gradient(rgba(31, 54, 115, 0.8), rgba(25, 57, 99, 0.8));
+    min-height: 100vh;
+    /* background: url('../../Images/regional-events-bg.jpg'), linear-gradient(rgba(31, 54, 115, 0.8), rgba(25, 57, 99, 0.8)); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    padding-top: 70px;
 }
-.eventtitle{
-    margin-top: 70px;
-    color: aliceblue;
+.eventscon{
+  width: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.eventimgs{
+    /* background: linear-gradient(rgba(75, 26, 0, 0.8), rgba(247, 88, 21, 0.8)); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px; 
+    padding:14px;
+    padding-left: 25px;
+}
+.img_con{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    border-radius: 5px; 
+    padding: 10px;
+    background-color: rgba(174, 0, 0, 0.4);
+
+}
+
+.event_img{
+    width: 100%;
+    height: 230px;
+    border-radius: 4px;
+    background: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5));
 }
 .subtitleevents{
     margin-top: 30px;
@@ -32,25 +68,13 @@
     text-align: center;
     padding: 20px;
     width: 100%;
-    background-color:rgb(112, 79, 1);
+    background: linear-gradient(rgba(66, 0, 35, 0.5), rgba(176, 1, 59, 0.5));
+    opacity: 0.3;
     opacity: 0.4;
-}
-.eventscon{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 60px;
-}
-.eventimgs{
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-}
-.imge{
-    width: 220px;
-    height: 200px;
-    object-fit: cover;
-    margin-left: 30px;
+    font-family: "Marvel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: bisque;
 }
 .mainimage{
     width: 270px;
@@ -65,7 +89,11 @@
     justify-content: center;
     align-items: center;
     margin-top: 130px;
+    margin-bottom: 30px;
    
+}
+.event_col{
+    margin-bottom: 20px;
 }
 .events-footer-line{
     color: aliceblue;
@@ -79,27 +107,42 @@
     background-color: aquamarine;
     height: 200px;
 }
-
+.spider{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    z-index: -1;
+}
+.event_desc{
+/* padding:5,
+ fontSize:14,
+  color:"whitesmoke" */
+  padding: 5px;
+  font-size: 17.5px;
+  color: whitesmoke;
+}
 @media (max-width:900px) {
     .events{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        height: 300vh;
+        min-height: 300vh;
+        width: 100%;
+        overflow: hidden;
        
     }
     .eventtitle{
-        margin-top: 70px;
         color: aliceblue;
+        margin-top: 30px;
     }
+  
     .subtitleevents{
         margin-top: 30px;
         margin-bottom: 30px;
         text-align: center;
         padding: 20px;
         width: 100%;
-        background-color:rgb(0, 114, 0);
         opacity: 0.4;
     }
     .eventscon{
@@ -112,7 +155,7 @@
     .eventimgs{
         display: flex;
         justify-content: space-between;
-        margin-top: 0px;
+        margin-top: 5px;
         flex-direction: column;
     }
     .imge{
@@ -136,7 +179,7 @@
     .events-footer-line{
         color: rgb(188, 227, 247);
         margin-bottom: 30px;
-        font-size: 12px;
+        font-size: 19px;
         text-align: center;
         padding: 10px;
     }

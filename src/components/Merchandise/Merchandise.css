@@ -1,13 +1,14 @@
 .main_merchan{
     display: flex;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
-    background:linear-gradient(rgba(4,9,49,0.6),rgba(4,9,49,0.6)),url('../../Images/avenger.jpg');
+    background:linear-gradient(rgba(4,9,49,0.6),rgba(4,9,49,0.6)),url('../../Images/1707547772897.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
-    /* padding: 40px; */
+    padding: 40px;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -29,6 +30,7 @@
     font-size: 17px;
     text-align:right;
     color: aliceblue;
+    margin-top: 20px;
 }
 .form_paper_merchan{
     padding: 20px;

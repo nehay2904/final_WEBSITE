@@ -16,7 +16,7 @@ export default function Main_navbar() {
   const [navColor, setnavColor] = useState("transparent");
 
   const listenScrollEvent = () => {
-    window.scrollY > 100 ? setnavColor("rgba(46, 0, 0, 0.7)") : setnavColor("transparent");
+    window.scrollY > 100 ? setnavColor("rgb(65, 1, 19, 0.8)") : setnavColor("transparent");
     window.scrollY > 10 ? setnavSize("5rem") : setnavSize("10rem");
   };
   useEffect(() => {
@@ -35,14 +35,14 @@ export default function Main_navbar() {
 
       <div className='nav-links'>
         
-      <motion.li whileHover={{ scale:1.3 }} transition={{ duration: 0.1 }} className='nav-items'><a href='#home'>HOME</a></motion.li>
-      <motion.li whileHover={{ scale:1.3 }} transition={{ duration: 0.1 }} className='nav-items'><a href="#about_section">ABOUT</a></motion.li>
-      <motion.li whileHover={{ scale:1.3 }} transition={{ duration: 0.1 }} className='nav-items'><a href="#events">EVENTS</a></motion.li>
-      <motion.li whileHover={{ scale:1.3 }} transition={{ duration: 0.1 }} className='nav-items'><a href="#sponsor">SPONSORS</a></motion.li>
-      <motion.li whileHover={{ scale:1.3 }} transition={{ duration: 0.1 }} className='nav-items'><a href="#gallery">GALLERY</a></motion.li>
-      <motion.li whileHover={{ scale:1.3 }} transition={{ duration: 0.1 }} className='nav-items'><Link to='team'>TEAM</Link> </motion.li>
-      <motion.li whileHover={{ scale:1.3 }} transition={{ duration: 0.1 }} className='nav-items'><a href="#contact">CONTACT</a></motion.li>
-      <motion.li whileHover={{ scale:1.3 }} transition={{ duration: 0.1 }} className='nav-items'><Link to='merchandise'>MERCHANDISE</Link></motion.li>
+      <motion.li  className='nav-items'><a href='#home'>HOME</a></motion.li>
+      <motion.li  className='nav-items'><a href="#about_section">ABOUT</a></motion.li>
+      <motion.li  className='nav-items'><a href="#events">EVENTS</a></motion.li>
+      <motion.li  className='nav-items'><a href="#sponsor">SPONSORS</a></motion.li>
+      <motion.li  className='nav-items'><a href="#gallery">GALLERY</a></motion.li>
+      <motion.li  className='nav-items'><Link to='team'>TEAM</Link> </motion.li>
+      <motion.li  className='nav-items'><a href="#contact">CONTACT</a></motion.li>
+      <motion.li  className='nav-items'><Link to='merchandise'>MERCHANDISE</Link></motion.li>
       </div>
 
 
